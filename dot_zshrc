@@ -104,6 +104,7 @@ alias vim=nvim
 alias python=python3
 alias fd=fdfind
 alias cm=chezmoi
+alias bat=batcat
 
 #
 # jupyter
