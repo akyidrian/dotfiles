@@ -107,11 +107,6 @@ alias cm=chezmoi
 alias bat=batcat
 
 #
-# jupyter
-#
-export PATH=$PATH:~/.local/bin/
-
-#
 # fzf
 #
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -126,7 +121,3 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 	--color=info:#7aa2f7,prompt:#9ece6a,pointer:#9ece6a 
 	--color=marker:#9ece6a,spinner:#9ece6a,header:#9ece6a'
 
-#
-# Docker
-#
-xhost +"local:docker@" > /dev/null
