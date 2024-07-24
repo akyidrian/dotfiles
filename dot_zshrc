@@ -115,9 +115,12 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fdfind --type d --strip-cwd-prefix --hidden --exclude .git"
 
 # tokyo-night theme
-export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS' 
-	--color=fg:#c0caf5,bg:#1a1b26,hl:#7aa2f7
-	--color=fg+:#e0af68,bg+:#3b4261,hl+:#bb9af7
-	--color=info:#7aa2f7,prompt:#9ece6a,pointer:#9ece6a 
-	--color=marker:#9ece6a,spinner:#9ece6a,header:#9ece6a'
+export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
+        --color=fg:#c0caf5,bg:#1a1b26,hl:#7aa2f7
+        --color=fg+:#e0af68,bg+:#3b4261,hl+:#bb9af7
+        --color=info:#7aa2f7,prompt:#9ece6a,pointer:#9ece6a
+        --color=marker:#9ece6a,spinner:#9ece6a,header:#9ece6a'
 
+if [[ ":$PATH:" != *":$HOME/.local/bin:"* ]]; then
+    export PATH="$HOME/.local/bin:$PATH"
+fi
